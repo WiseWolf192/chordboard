@@ -15,9 +15,9 @@ import keyboard
 BASE_DIR = getattr(sys, "_MEIPASS", os.path.dirname(__file__))
 MAPPING_PATH = os.path.join(BASE_DIR, "mapping_clean.json")
 
-# 오른손/왼손에 사용할 5개 키 (왼→오 순서)
-RIGHT_CHORD_KEYS = ['f', 'g', 'h', 'j', 'k']
-LEFT_CHORD_KEYS  = ['a', 's', 'd', 'f', 'g']
+# 오른손/왼손에 사용할 5개 키 (버튼 1(엄지)→버튼 5(새끼) 순서)
+RIGHT_CHORD_KEYS = ['0', '7', '8', '9', '+'] #넘버패드
+LEFT_CHORD_KEYS  = ['space', 'f', 'd', 's', 'a']
 
 DEFAULT_HAND = 'RIGHT'                         # 'RIGHT' or 'LEFT'
 DEBOUNCE = 0.02                                # 20ms 안정화 대기
